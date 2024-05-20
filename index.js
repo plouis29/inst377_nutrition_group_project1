@@ -14,6 +14,9 @@ const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey)
 app.get('/', (req, res) => {
     res.sendFile('public/Home.html', { root: __dirname })
 })
+app.get('/', (req, res) => {
+    res.sendFile('public/Project_Specific.html', { root: __dirname })
+})
 
 // Creating the API
 // Source for the data is from: https://www.health.harvard.edu/blog/10-superfoods-to-boost-a-healthy-diet-2018082914463
